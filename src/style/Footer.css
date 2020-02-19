@@ -1,0 +1,25 @@
+footer {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #313131;
+    justify-items: center;
+    overflow: hidden;
+}
+
+footer > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    fill: #ca3e47;
+    width: 30px;
+}
+
+svg:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 5px 5px #414141;
+    border-radius: 25%;
+}

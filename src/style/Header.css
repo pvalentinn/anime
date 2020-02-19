@@ -1,0 +1,44 @@
+header {
+    background-color: #313131;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Ubuntu', sans-serif;  
+}
+
+.title {
+    color: #ca3e47;
+    text-align: center;
+    width: 95%;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    font-family: 'SourceSans', sans-serif;
+}
+
+nav {
+    width: 95%;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    list-style-type: none;
+}
+
+header a, header a:link {
+    text-decoration: none;
+    background-color: #ca3e47;
+    padding: 1vw;
+    font-size: 1.5rem;
+    color: #313131;
+}
+
+header a:hover {
+    margin-right: 7px;
+    box-shadow: 10px 5px 5px #414141;
+}
