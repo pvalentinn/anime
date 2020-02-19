@@ -6,7 +6,7 @@ class Reviews extends Component {
     render() { 
         return ( 
             <article>
-                <p id='review'></p>
+                {this.props.review}
             </article>
          );
     }

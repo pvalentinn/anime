@@ -176,7 +176,7 @@ main {
     align-items: center;
     margin-top: 50px;
     text-align: center;
-    font-size: min(1.7vw, 15px);
+    font-size: min(1.7vw, 18px);
 }
 
 .tableBody::-webkit-scrollbar {
@@ -190,18 +190,23 @@ main {
     background: #525252;
 }
 
-
-
 article {
-    height: 200px; 
-    width: 80%;
+    height: 225px; 
+    width: 85%;
     margin: 50px 0;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #313131;
-    display: none;
+    opacity: 0;
+}
+
+.review {
+    color: #ca3e47;
+    font-size: min(1.5rem, 20px);
+    font-family: 'Ubuntu', sans-serif;
+    width: 90%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 400px) {
@@ -236,12 +241,7 @@ article {
     }
 
     .review {
-        min-height: 150px;
-        max-height: 200px;
-    }
-
-    .review p {
-        font-size: 15px;
+        font-size: 13px;
     }
     
     article {
@@ -282,6 +282,10 @@ article {
         top: 35px;
     }
 
+    .review {
+        font-size: 15px;
+    }
+
     article {
         margin-top: 0px;
         margin-bottom: 25px;
@@ -320,70 +324,8 @@ article {
         top: 45px;
     }
 
-}
+    .review {
+        font-size: 15px;
+    }
 
-/* input[type="radio"] {
-    display: none;
 }
-
-article {
-    display: grid;
-    grid-template-rows: 30px auto;
-    grid-template-columns: repeat(5, 1fr);
-    width: 100%;
-    margin: 50px 0;
-}
-
-article input + label {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border-left: 1px solid #525252;
-    background-color: #313131;
-    color: #ca3e47;
-    font-family: 'SourceSans', sans-serif;
-}
-
-article input:checked + label {
-    background-color: #ca3e47;
-    color: #313131;
-    transform: scale(1.05);
-}
-
-.review {
-    grid-column: 1 / 6;
-    width: 100%;
-    min-height: 200px;
-    max-height: 250px;
-    background-color: #414141;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.review p {
-    display: none;
-    color: #ca3e47;
-    font-size: min(1.5rem, 20px);
-    font-family: 'Ubuntu', sans-serif;
-}
-
-article input[id="1"]:checked + label ~ .review > p[data-index="1"] {
-    display: block;
-}
-article input[id="2"]:checked + label ~ .review > p[data-index="2"] {
-    display: block;
-}
-article input[id="3"]:checked + label ~ .review > p[data-index="3"] {
-    display: block;
-}
-article input[id="4"]:checked + label ~ .review > p[data-index="4"] {
-    display: block;
-}
-article input[id="5"]:checked + label ~ .review > p[data-index="5"] {
-    display: block;
-} */

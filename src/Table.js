@@ -21,7 +21,6 @@ class Table extends Component {
                 {content: <h2>29 tomes en VO (Kodansha)<br />28 en VF (Pika)</h2>},
                 {content: <h2>Wit Studio</h2>},
                 {content: <h2>8.47 (MAL)<br />9.2 (Nautijon)<br />9</h2>},
-                // {content: <img src={animes[5]} alt='pen' className={style.pen} onClick={this.props.show}/>}
             ]},
             {id: 'opm', col: [
                 {content: <img src={animes[1]} alt='opm'/>},
@@ -29,7 +28,6 @@ class Table extends Component {
                 {content: <h2>20 tomes en VO (Shueisha)<br />20 en VF (Kurokawa)</h2>},
                 {content: <h2>Mad House<br />J.C Staff</h2>},
                 {content: <h2>S1 puis S2<br />8.70/7.56 (MAL)<br />8.82/7.73 (Nautijon)<br />8.5/5.5</h2>},
-                // {content: <img src={animes[5]} alt='pen' className={style.pen} onClick={this.props.show}/>}
             ]},
             {id: 'kny', col: [
                 {content: <img src={animes[2]} alt='kny'/>},
@@ -37,7 +35,6 @@ class Table extends Component {
                 {content: <h2>17 tomes en VO (Shueisha)<br />4 tomes en VF (Panini)</h2>},
                 {content: <h2>Ufotable</h2>},
                 {content: <h2>8.96 (MAL)<br />9.38 (Nautijon)<br />9</h2>},
-                // {content: <img src={animes[5]} alt='pen' className={style.pen} onClick={this.props.show}/>}
             ]},
             {id: '', col: [
                 {content: <img src={animes[3]} alt='arifureta'/>},
@@ -45,15 +42,13 @@ class Table extends Component {
                 {content: <h2>5 tomes en VO (OVERLAP)<br /><em>Pas de sortie Fr</em></h2>},
                 {content: <h2>asread<br /> WHITE FOX</h2>},
                 {content: <h2>6.48 (MAL)<br />7.26 (Nautijon)<br />4</h2>},
-                // {content: <img src={animes[5]} alt='pen' className={style.pen} onClick={this.props.show}/>}
             ]},
             {id: '', col: [
                 {content: <img src={animes[4]} alt='anohana'/>},
-                {content: <h2><span>Ano Hi Mita Hana no Namae wo<br />Bokutachi wa Mada Shiranai</span><br />(Anohana)<br /><em>(Wakanim/Netflix/Amazon)</em></h2>},
+                {content: <h2><span>Ano Hi Mita Hana <br /> no Namae wo Bokutachi wa <br /> Mada Shiranai</span><br />(Anohana)<br /><em>(Wakanim/Netflix/Amazon)</em></h2>},
                 {content: <h2>3 tomes en VO(Shueisha)<br />3 tomes en VF (Panini)<br /><em>Oeuvre terminé.</em></h2>},
                 {content: <h2>asread<br /> WHITE FOX</h2>},
                 {content: <h2>8.51 (MAL)<br />8.76 (Nautijon)<br />8.5</h2>},
-                // {content: <img src={animes[5]} alt='pen' className={style.pen} onClick={this.props.show}/>}
             ]},
         ]
     }
