@@ -39,7 +39,7 @@ class Anime extends Component {
 
     render() { 
         return ( 
-            <main className={style}>
+            <main className>
                 <div className={style.container}>
                     <Table show={this.show} />
                     <Reviews review={this.state.review}/>
