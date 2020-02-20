@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Home from './Home';
 import Manga from './Manga';
 import Anime from './Anime';
+import Studio from './Studio';
 
 import './style/App.css';
 
@@ -17,6 +18,7 @@ function App() {
       
       <Route path='/anime' component={Anime} />
       <Route path='/manga' component={Manga} />
+      <Route path='/studio' component={Studio} />
       <Route path='/' component={Home} exact/>
       <Footer />
     </div>

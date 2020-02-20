@@ -28,7 +28,7 @@ class Manga extends Component {
             },
             {id: 'kny', img: mangas[5], titre: <Link to="/anime#kny">Kimetsu No Yaiba</Link>, note: ' (8.5/10)', class: style.imgRight, 
             resume: `Depuis les temps anciens, il existe des rumeurs concernant des démons mangeurs d'hommes qui se cachent dans les bois. Pour cette raison, les citadins locaux ne s'y aventurent jamais la nuit. La légende raconte aussi qu'un tueur de démons déambule la nuit, chassant ces démons assoiffés de sang. Pour le jeune Tanjirou, ces rumeurs vont bientôt devenir sa dure réalité ...`,
-            avis: <p>Le manga n'a rien a envié a son format <Link to="/anime#kny">anime</Link> : <br /> il reste fidèle a son atmosphère d'ancien Japon, les protagonistes risquent toujours leur vies dans des combats effrénés et ça se sens. Bon dans son adaptation et son format papier, une histoire à suivre !</p>
+            avis: <p>Le manga n'a rien a envié a son format <Link to="/anime#kny" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'end' })}>anime</Link> : <br /> il reste fidèle a son atmosphère d'ancien Japon, les protagonistes risquent toujours leur vies dans des combats effrénés et ça se sens. Bon dans son adaptation et son format papier, une histoire à suivre !</p>
             }
         ]
     }

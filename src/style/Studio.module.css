@@ -1,0 +1,299 @@
+.main {
+    min-height: 85vh;
+    /* min-height: 650px; */
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #525252;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23525252' cx='50' cy='0' r='50'/%3E%3Cg fill='%234f4f4f' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%234d4d4d' cx='50' cy='100' r='50'/%3E%3Cg fill='%234a4a4a' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23484848' cx='50' cy='200' r='50'/%3E%3Cg fill='%23454545' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23434343' cx='50' cy='300' r='50'/%3E%3Cg fill='%23404040' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%233e3e3e' cx='50' cy='400' r='50'/%3E%3Cg fill='%233c3c3c' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23393939' cx='50' cy='500' r='50'/%3E%3Cg fill='%23373737' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23343434' cx='50' cy='600' r='50'/%3E%3Cg fill='%23323232' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23303030' cx='50' cy='700' r='50'/%3E%3Cg fill='%232d2d2d' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%232b2b2b' cx='50' cy='800' r='50'/%3E%3Cg fill='%23292929' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23262626' cx='50' cy='900' r='50'/%3E%3Cg fill='%23242424' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23222222' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.box {
+    height: 70px;
+    width: 80%;
+    max-width: 1200px;
+    display: block;
+    background: linear-gradient(to bottom, #525252 5%, #414141 100%);
+    border-radius: 15px;
+    border: 2px solid #313131;
+    box-shadow: inset 0px 0px 14px -3px crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ca3e47;
+}
+
+.content {
+    width: 75%;
+    max-width: 1000px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #313131;
+    color: #ca3e47;
+}
+
+.content > .nav {
+    height: 10%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.content > .nav > a {
+    text-decoration: none;
+    color: #ca3e47;
+    border-radius: 50%;
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 40px;
+    max-height: 40px;
+    border: 3px solid #ca3e47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 18px;
+}
+
+.nav > a:focus {
+    color: #313131;
+    background-color: #ca3e47;
+}
+
+.slides {
+    display: flex;
+    height: 90%;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.slides > div {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    scroll-snap-align: start;
+    position: relative;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.slides h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.slides hr {
+    border: none;
+    border-left: 3px solid #212121;
+    height: 90%;
+    width: 3px;       
+}
+
+.left, .right {
+    height: 95%;
+    width: 48%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left h2 {
+    font-size: 30px;
+    font-family: 'SourceSans', sans-serif;
+}
+
+.left .img {
+    width: 250px;
+    min-width: 150px;
+    height: 250px;
+    min-height: 150px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* #id1 .img {background-image: url('../img/studio/a1/a1.svg');} #id4 .img {background-image: url('../img/studio/bones/bones.svg');}
+#id7 .img {background-image: url('../img/studio/madhouse/madhouse.svg');} #id10 .img {background-image: url('../img/studio/wit/Wit_studio.png');}  */
+
+.right > p {
+    font-size: 17.5px;
+    width: 90%;
+    text-align: center;
+}
+
+.second {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.iframe {
+    max-width: 440px;
+    max-height: 250px;
+}
+
+.third {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.third .anime {
+    display: grid;
+    height: 75%;
+    grid-template-columns: repeat(5, 0.85fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.third .anime figure > figcaption {
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.third .anime img {
+    width: 90%;
+}
+
+.slides::-webkit-scrollbar {
+    width: 5px;
+    height: 7.5px;
+}
+.slides::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+    background: #525252;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .box {
+        width: 100%;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .content > .nav {
+        height: 4.5vh;
+        width: 33vw;
+    }
+
+    .slides h2 {
+        font-size: 20px;
+    }
+
+    .slides p {
+        font-size: 3vw;
+    }
+
+    .left .img {
+        width: 125px;
+        min-width: 75px;
+        height: 125px;
+        min-height: 75px;
+    }
+
+    .iframe {
+        width: 80%;
+        height: 50%;
+    }
+
+    .third .anime figure > figcaption {
+        font-size: 2.8vw;
+    }
+
+    .third .anime img {
+        width: 95%;
+    }
+
+}
+
+@media screen and (min-width: 421px) and (max-width: 520px) {
+    .box {
+        width: 100%;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .slides h2 {
+        font-size: 25px;
+    }
+
+    .slides p {
+        font-size: 2.7vw;
+    }
+
+    .left .img {
+        width: 175px;
+        min-width: 125px;
+        height: 175px;
+        min-height: 125px;
+    }
+
+    .iframe {
+        width: 80%;
+        height: 70%;
+    }
+
+    .third .anime figure > figcaption {
+        font-size: 2.9vw;
+    }
+
+}
+
+@media screen and (min-width: 521px) and (max-width: 850px) {
+    .box {
+        width: 100%;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .slides p {
+        font-size: 13.5px;
+    }
+
+    .left .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .iframe {
+        width: 80%;
+        height: 70%;
+    }
+
+    .third .anime figure > figcaption {
+        font-size: 2.5vw;
+    }
+
+}

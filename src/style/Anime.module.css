@@ -15,7 +15,7 @@ a, a:link {
 
 .container {
     width: 95%;
-    max-width: 1300px;
+    max-width: 1550px;
     min-height: 80vh;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ a, a:link {
 .table {
     margin: 50px 0;
     color: #ca3e47;
-    max-width: 1350px;
+    max-width: 1550px;
     font-family: 'Ubuntu', sans-serif; 
 }
 
@@ -169,7 +169,7 @@ a, a:link {
     }
     
     .tableBody {
-        height: 200px;
+        height: 225px;
     }
 
     .tableBody > .row {

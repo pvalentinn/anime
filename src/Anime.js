@@ -3,7 +3,7 @@ import $ from 'jquery';
 import style from './style/Anime.module.css';
 import Table from './Table';
 import Reviews from './Reviews';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Anime extends Component {
     state = {
@@ -39,6 +39,7 @@ class Anime extends Component {
 
     scrollbarWidthResize() {
         let tableBody = document.querySelector('#tableBody');
+        if(!tableBody) return;
         let row = document.querySelector('#aot');
         let scrollbarWidth = tableBody.offsetWidth - row.offsetWidth;
         let rowTableHead = $('#tableHeaderRow');

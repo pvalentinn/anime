@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import style from './style/Anime.module.css';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { animes } from './images';
 import Pen from './Pen';
 
@@ -38,14 +38,14 @@ class Table extends Component {
             ]},
             {id: '', col: [
                 {content: <img src={animes[3]} alt='arifureta'/>},
-                {content: <h2><span>Arifureta Shokugyou <br /> de Sekai Saikyou</span><br />(Arifureta)<br /><em>(Wakanim)</em></h2>},
+                {content: <h2><span title={'Arifureta Shokugyou de Sekai Saikyou'}>Arifureta Shokugyou <br /> de Sekai Saikyou</span><br />(Arifureta)<br /><em>(Wakanim)</em></h2>},
                 {content: <h2>5 tomes en VO (OVERLAP)<br /><em>Pas de sortie Fr</em></h2>},
                 {content: <h2>asread<br /> WHITE FOX</h2>},
                 {content: <h2>4(Avis)<br /><br />6.48 (MAL)<br />7.26 (Nautijon)</h2>},
             ]},
             {id: '', col: [
                 {content: <img src={animes[4]} alt='anohana'/>},
-                {content: <h2><span>Ano Hi Mita Hana <br /> no Namae wo Bokutachi wa <br /> Mada Shiranai</span><br />(Anohana)<br /><em>(Wakanim/Netflix/Amazon)</em></h2>},
+                {content: <h2><span title={'Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai'}>Ano Hi Mita Hana <br /> no Namae wo Bokutachi wa <br /> Mada Shiranai</span><br />(Anohana)<br /><em title={"(Wakanim/Netflix/Amazon)"}>(Wakanim/Netflix/Amazon)</em></h2>},
                 {content: <h2>3 tomes en VO(Shueisha)<br />3 tomes en VF (Panini)<br /><em>Oeuvre terminé.</em></h2>},
                 {content: <h2>asread<br /> WHITE FOX</h2>},
                 {content: <h2>8.5(Avis)<br /><br />8.51 (MAL)<br />8.76 (Nautijon)</h2>},
