@@ -54,7 +54,6 @@ a, a:link {
 
 .tableHead > .row {
     background-color: #313131;
-    margin-right: 10px;
 }
 
 .tableHead >.row > .col {
@@ -75,6 +74,10 @@ a, a:link {
 .tableBody > .row > .col {
     border: 1px solid #313131;
     font-size: 15px;
+}
+
+.tableBody > .row > .col > h2  {
+    font-size: 1.27em;
 }
 
 .tableBody > .row > .col > h2 > span, .tableBody > .row > .col > h2 > em {
@@ -122,9 +125,9 @@ a, a:link {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 50px 0px;
     text-align: center;
-    font-size: min(1.7vw, 18px);
+    font-size: min(1.5vw, 15px);
 }
 
 .tableBody::-webkit-scrollbar {

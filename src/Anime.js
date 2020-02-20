@@ -37,6 +37,19 @@ class Anime extends Component {
         }       
     }
 
+    scrollbarWidthResize() {
+        let tableBody = document.querySelector('#tableBody');
+        let row = document.querySelector('#aot');
+        let scrollbarWidth = tableBody.offsetWidth - row.offsetWidth;
+        let rowTableHead = $('#tableHeaderRow');
+        rowTableHead.css('marginRight', scrollbarWidth);
+    }
+
+    componentDidMount() {
+        this.scrollbarWidthResize();
+        window.addEventListener('resize', this.scrollbarWidthResize.bind(this));
+    }
+
     render() { 
         return ( 
             <main className={style.main}>

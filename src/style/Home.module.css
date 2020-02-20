@@ -5,6 +5,8 @@
     background-attachment: fixed;
     background-size: contain;
     padding: 10px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .container {

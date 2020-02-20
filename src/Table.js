@@ -53,17 +53,18 @@ class Table extends Component {
         ]
     }
 
+
     render() { 
         return ( 
             <div className={style.table}>
                 <div className={style.tableHead}>
-                    <div className={style.row}>
+                    <div className={style.row} id='tableHeaderRow'>
                         {this.state.tableHead.map( (e, i) => 
                             <div className={style.col} key={i+1}>{e.content}</div>
                         )}
                     </div>
                 </div>
-                <div className={style.tableBody}>
+                <div className={style.tableBody} id='tableBody'>
                     {this.state.tableBody.map( (e, i)  => 
                         <div className={style.row} id={e.id} key={i+1}>
                             {e.col.map( (col, index) => 

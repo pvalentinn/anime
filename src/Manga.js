@@ -20,7 +20,7 @@ class Manga extends Component {
             },
             {id: 'kg', img: mangas[3], titre: "King's game", note: ' (8.5/10)',  class: style.imgRight,
             resume: `L'histoire se centre sur une classe entière de 32 lycéens qui reçoivent un étrange message venant d'une personne se faisant appeler le "Roi." Le message contient des ordres que les lycéens doivent accomplir sous peine de mourir. Au fur et à mesure que les jours passent, les ordres du "Roi" deviennent de plus en plus extrêmes..`,
-            avis: <p>Un <a href="https://fr.wikipedia.org/wiki/Seinen" target='_blank'>Seinen</a> peu connu, assez gore où le drama et l'horreur sont omniprésents. <br />Une intrigue mystérieuse ou des ados se retrouvent forcer de 'jouer' avec la vie et la mort! <br /> L'histoire et le besoin d'en connaitre la fin en font un excellent manga, selon moi. </p>
+            avis: <p>Un <a href="https://fr.wikipedia.org/wiki/Seinen" target='_blank' rel="noopener noreferrer">Seinen</a> peu connu, assez gore où le drama et l'horreur sont omniprésents. <br />Une intrigue mystérieuse ou des ados se retrouvent forcer de 'jouer' avec la vie et la mort! <br /> L'histoire et le besoin d'en connaitre la fin en font un excellent manga, selon moi. </p>
             },
             {id: 'kuni', img: mangas[4], titre: 'Houseki no Kuni', note: ' (7/10)', class: style.img,
             resume: `Dans ce monde, la terre a été frappée d'une chute de météores, réduisant sa surface à une simple île en forme de croissant, totalement infertile. Les continents ayant été détruits se sont réunis dans le ciel pour former 6 lunes Cependant, la terre est maintenant peuplée par une nouvelle espèce: Les cristaux. Ils sont immortels et se nourrissent de lumière. Ils sont régulièrement attaquées par les Séléniens, les habitants des 6 lunes, qui veulent récupérer le cristal dont ils sont faits pour en faire des armes et des ornements. Phosphophyllite est l'un d'eux. Elle veut combattre les séléniens, mais à cause de sa maladresse et de sa très faible solidité, ça lui est impossible, et Phosphophyllite n'a donc pas encore de tâche assignée. Mais un jour, maître Varja, le plus vieux des cristaux, lui donne l'ordre d'écrire une encyclopédie qui relate l'histoire des cristaux et leur environnement, ce qui l'amènera à rencontrer un certain cristal nommé Cinabr /e...`,
@@ -37,11 +37,11 @@ class Manga extends Component {
         return (
             <main className={style.main}>
                 {this.state.containers.map( (e, i) =>
-                    <div className={style.container} id={e.id}>
+                    <div className={style.container} id={e.id} key={e.id + i}>
                         <div className={e.class}><img src={e.img} alt={e.titre}/></div>
                         <div className={style.txt}>
                             <div className={style.name}>
-                                <h1>{e.titre}{e.note}</h1><span className={style.emoji}>📖</span>
+                                <h1>{e.titre}{e.note}</h1><span className={style.emoji} role="img" aria-label='synopsis'>📖</span>
                                 <span className={style.resume}>{e.resume}</span>
                             </div>
                             {e.avis}
