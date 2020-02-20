@@ -6,7 +6,7 @@ import './style/Header.css';
 class Header extends Component {
     state = { 
         titre: 'Anime site',
-        intro: 'Découvre mes gouts sur différentes oeuvres de la culture japonaise.',
+        intro: 'Découvre mes goûts sur différentes oeuvres de la culture japonaise.',
     }
 
     render() { 
