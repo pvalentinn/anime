@@ -10,7 +10,7 @@ class Content extends Component {
 
     render() {
         return (
-            <div className={style.content}>
+            <div className={style.content} id={this.props.id}>
                 <div className={style.slides}>
                     <First index={this.state.index}/>
                     <Second index={this.state.index}/>
