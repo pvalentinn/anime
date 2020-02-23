@@ -10,8 +10,7 @@ class Studio extends Component {
             {id: 'box2', name: 'Bones', state: 0},
             {id: 'box3', name: 'Mad House', state: 0},
             {id: 'box4', name: 'Wit Studio', state: 0},
-        ],
-        content: <></>,
+        ]
     }
 
     toggle = async (id, i) => {
@@ -28,6 +27,18 @@ class Studio extends Component {
         
         // console.log(which)
         await this.updateState(i);
+
+        let numb = copy.filter( e => e.state === 1);
+        // console.log(numb);
+        if (numb.length > 2 ) {
+            $('#content'+copy.indexOf(numb[1])).animate({height: '0px'}, 500, 'swing', () => {
+                setTimeout(() => {
+                    copy[copy.indexOf(numb[1])].state = 0;
+                    this.setState({box: copy});
+                }, )
+            });
+        }
+
         if(verify) {
             let iContent = parseInt(which.id[3]) - 1
             // console.log( $(`#content${iContent}`) )
@@ -54,18 +65,15 @@ class Studio extends Component {
             <main className={style.main}>
                 {this.state.box.map( (e, i) =>
                 <>
-                    <div className={style.box} id={e.id} key={e.id} 
-                    onClick={() => this.toggle('#'+e.id, i)}>
+                    <div className={style.box} id={e.id} key={e.id} onClick={() => this.toggle('#'+e.id, i)}>
                         <h2 key={'h2'+i}>{e.name}</h2>
                     </div>
-
                     {(() => {
                         if(this.state.box[i].state === 1) { 
                         return <Content key={'content'+i} index={i} id={'content'+i} />
                     }
                         else return;
                     })()}
-
                 </> 
                 )}
             </main>

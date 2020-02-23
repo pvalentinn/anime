@@ -22,4 +22,4 @@ class First extends Component {
     }
 }
 
-export default First
+export default First;
