@@ -5,18 +5,19 @@ class Second extends Component {
 
     
     state = {
-        page: [
-            {text: <img src='https://via.placeholder.com/300'></img>},
-            {text: <img src='https://via.placeholder.com/300'></img>},
-            {text: 'texv'},
-            {text: 'texf'}
+        videos: [
+            {link: "https://www.youtube.com/embed/iwWXeXbcXPE"},
+            {link: "https://www.youtube.com/embed/uGZ-pD2IYM8"},
+            {link: "https://www.youtube.com/embed/15W08Kjy5RA"},
+            {link: "https://www.youtube.com/embed/7jngL-Q4Ako"}
         ]
     }
 
     render() {
         return (
             <div className={style.second}>
-                {this.state.page[this.props.index].text};
+                <h2>Best of du studio : </h2>
+                <iframe src={this.state.videos[this.props.index].link} className={style.video} title={'video'+this.props.index}></iframe>
             </div>
         )
     }

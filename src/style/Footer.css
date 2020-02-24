@@ -2,7 +2,7 @@ footer {
     height: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #313131;
+    background-color: #142850;
     justify-items: center;
     overflow: hidden;
 }
@@ -14,12 +14,12 @@ footer > a {
 }
 
 svg {
-    fill: #ca3e47;
+    fill: #bbe1fa;
     width: 30px;
 }
 
 svg:hover {
     transform: scale(1.1);
-    box-shadow: 10px 5px 5px #414141;
+    box-shadow: 10px 5px 5px #bbe1fa6b;
     border-radius: 25%;
 }

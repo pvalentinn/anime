@@ -25,7 +25,6 @@ class Studio extends Component {
             }
         }); 
         
-        console.log(which)
         await this.updateState(i);
         // copy = [...this.state.box];
 

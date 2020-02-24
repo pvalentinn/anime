@@ -13,6 +13,7 @@ class Content extends Component {
     }
 
     prev = () => {
+        setTimeout(() => console.log('wait'), 200);
         let copy = this.state;
         if(copy.display === 0) copy.display = 2 
         else {
@@ -48,8 +49,8 @@ class Content extends Component {
         return (
             <div className={style.content} id={this.props.id}>
                 <div className={style.slider}>
-                    <span className={style.prev} onClick={this.prev}>&#10094;</span>
-                    <span className={style.next} onClick={this.next}>&#10095;</span>
+                    <span className={style.prev} onClick={() => setTimeout(() => this.prev(), 125)}>&#10094;</span>
+                    <span className={style.next} onClick={() => setTimeout(() => this.next(), 125)}>&#10095;</span>
                     <div className={style.list}>
                     {(() => {
                             if(this.state.display === 0) {

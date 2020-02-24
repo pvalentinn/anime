@@ -1,7 +1,7 @@
 .main {
     padding: 12vh 0;
-    background-color: #525252;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23525252' cx='50' cy='0' r='50'/%3E%3Cg fill='%234f4f4f' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%234d4d4d' cx='50' cy='100' r='50'/%3E%3Cg fill='%234a4a4a' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23484848' cx='50' cy='200' r='50'/%3E%3Cg fill='%23454545' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23434343' cx='50' cy='300' r='50'/%3E%3Cg fill='%23404040' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%233e3e3e' cx='50' cy='400' r='50'/%3E%3Cg fill='%233c3c3c' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23393939' cx='50' cy='500' r='50'/%3E%3Cg fill='%23373737' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23343434' cx='50' cy='600' r='50'/%3E%3Cg fill='%23323232' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23303030' cx='50' cy='700' r='50'/%3E%3Cg fill='%232d2d2d' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%232b2b2b' cx='50' cy='800' r='50'/%3E%3Cg fill='%23292929' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23262626' cx='50' cy='900' r='50'/%3E%3Cg fill='%23242424' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23222222' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #142850;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23142850' cx='50' cy='0' r='50'/%3E%3Cg fill='%231d3058' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2325385f' cx='50' cy='100' r='50'/%3E%3Cg fill='%232d4067' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2336486f' cx='50' cy='200' r='50'/%3E%3Cg fill='%233e5177' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23455a80' cx='50' cy='300' r='50'/%3E%3Cg fill='%234e6388' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23566c90' cx='50' cy='400' r='50'/%3E%3Cg fill='%235e7599' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23667ea1' cx='50' cy='500' r='50'/%3E%3Cg fill='%236e87aa' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%237691b2' cx='50' cy='600' r='50'/%3E%3Cg fill='%237f9bbb' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%2387a4c4' cx='50' cy='700' r='50'/%3E%3Cg fill='%2390aecd' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2398b8d6' cx='50' cy='800' r='50'/%3E%3Cg fill='%23a1c2df' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a9cce8' cx='50' cy='900' r='50'/%3E%3Cg fill='%23b2d7f1' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bbe1fa' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: contain;
     display: flex;
@@ -22,19 +22,19 @@
 .txt {
     width: 75%;
     height: 100%;
-    background-color: #414141;
+    background-color: #0f4c75;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
     border-radius: 15px;
-    border: 5px solid #313131;
+    border: 5px solid #142850;
     margin: 0px 10px;
 }
 
 .txt h1 {
-    color: #ca3e47;
+    color: #bbe1fa;
     text-decoration: underline;
     display: inline-block;
 }
@@ -49,8 +49,8 @@
 .resume {
     visibility: hidden;
     width: 40vw;
-    background-color: #313131de;
-    color: #ca3e47;
+    background-color: #142850de;
+    color: #bbe1fa;
     font-size: 15px;
     font-family: 'Ubuntu', sans-serif; 
     text-align: center;
@@ -70,37 +70,37 @@
     max-width: 80%;
     font-size: 1.2em;
     font-family: 'Ubuntu', sans-serif;  
-    color: #ca3e47;
+    color: #bbe1fa;
 }
 
 .txt a, .txt a:link {
-    color: #ca3e47;
+    color: #bbe1fa;
     text-decoration: underline;
 }
 
 .imgRight {
     width: auto;
     height: 100%;
-    background-color: #414141;
+    background-color: #0f4c75;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 15px;
     padding: 0px 10px;
-    border: 5px solid #313131;
+    border: 5px solid #142850;
     order: 2;
 }
 
 .img {
     width: auto;
     height: 100%;
-    background-color: #414141;
+    background-color: #0f4c75;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 15px;
     padding: 0px 10px;
-    border: 5px solid #313131;
+    border: 5px solid #142850;
 }
 
 .img > img, .imgRight > img  {

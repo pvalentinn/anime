@@ -70,7 +70,7 @@ class Table extends Component {
                             {e.col.map( (col, index) => 
                                 <div className={style.col} key={index+1}>{col.content}</div>
                             )}
-                            <div className={style.col} key={'penRow'+ i}><Pen id={'pen' + i} key={i+1} class={style.pen} show={this.props.show}/></div>
+                            <div className={style.col} key={'penRow'+ i}><Pen id={'pen' + (i+1)} key={i+1} class={style.pen} show={this.props.show}/></div>
                         </div>
                     )}
                     <div className={style.disclaimer}>

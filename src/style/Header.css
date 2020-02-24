@@ -1,5 +1,5 @@
 header {
-    background-color: #313131;
+    background-color: #142850;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@ header {
 }
 
 .title {
-    color: #ca3e47;
+    color: #bbe1fa;
     text-align: center;
     width: 95%;
 }
@@ -32,13 +32,13 @@ nav ul {
 
 header a, header a:link {
     text-decoration: none;
-    background-color: #ca3e47;
+    background-color: #bbe1fa;
     padding: 1vw;
     font-size: 1.5rem;
-    color: #313131;
+    color: #142850;
 }
 
 header a:hover {
     margin-right: 7px;
-    box-shadow: 10px 5px 5px #414141;
+    box-shadow: 10px 5px 5px #0f4c75a4;
 }
