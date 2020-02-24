@@ -7,56 +7,40 @@ import $ from 'jquery';
 
 class Content extends Component {
 
-    state = { index: this.props.index }
-
-    componentWillMount() {
-
-
-
-        $(`#${this.props.id} > div > div > div:last-child`).prependTo($(`#${this.props.id} > div > div`));
-    }
-
-    componentDidMount(){
-        
-        let $content = $('#'+this.props.id);
-        let sliderWidth = $content.width();
-        let list = $(`#${this.props.id} > div > div`)
-
-        list.css({ width: sliderWidth * 3, marginLeft: -sliderWidth });
-        list.children().css({ width: sliderWidth });
-        
-        window.addEventListener('resize', () =>  {
-            sliderWidth = $content.width();
-            list.css({ width: sliderWidth * 3, marginLeft: -sliderWidth });
-            list.children().css({ width: sliderWidth});
-        });
-        $(`#${this.props.id} > div > div > div:last-child`).prependTo(list);
-
+    state = { 
+        index: this.props.index,
+        display: 0 
     }
 
     prev = () => {
-        
+        let copy = this.state;
+        if(copy.display === 0) copy.display = 2 
+        else {
+            copy.display--
+        }
+
         let list = $(`#${this.props.id} > div > div`);
         let sliderWidth = $('#'+this.props.id).width();
 
-        $(`#${this.props.id} span`).first().click(() => {
-            list.animate({left: - sliderWidth}, 500, () => {
-                list.children().last().prependTo(list);
-                list.css({left: ''});
-            });
+        list.animate({left: + sliderWidth}, 500, () => {
+            this.setState({display: copy.display})
+            list.css({left: ''});
         });
     }
 
     next = () => {
+        let copy = this.state;
+        if(copy.display === 2) copy.display = 0 
+        else {
+            copy.display++
+        }
         
         let list = $(`#${this.props.id} > div > div`);
         let sliderWidth = $('#'+this.props.id).width();
 
-        $(`#${this.props.id} span`).last().click(() => {
-            list.animate({left: + sliderWidth}, 500, () => {
-                list.children().first().appendTo(list);
-                list.css({left: ''});
-            });
+        list.animate({left: - sliderWidth}, 500, () => {
+            this.setState({display: copy.display})
+            list.css({left: ''});                
         });
     }
 
@@ -67,9 +51,33 @@ class Content extends Component {
                     <span className={style.prev} onClick={this.prev}>&#10094;</span>
                     <span className={style.next} onClick={this.next}>&#10095;</span>
                     <div className={style.list}>
-                        <First index={this.props.index}/>
-                        <Second index={this.props.index}/> 
-                        <Third index={this.props.index}/>
+                    {(() => {
+                            if(this.state.display === 0) {
+                                return(
+                                <>
+                                    <Third index={this.props.index} key='third'/>
+                                    <First index={this.props.index} key='first'/>
+                                    <Second index={this.props.index} key='second'/> 
+                                </>
+                                )
+                            } else if (this.state.display === 1) {
+                                return(
+                                <>
+                                    <First index={this.props.index} key='first'/>
+                                    <Second index={this.props.index} key='second'/>
+                                    <Third index={this.props.index} key='third'/> 
+                                </>
+                                )
+                            } else if (this.state.display === 2) {
+                                return(
+                                <>
+                                    <Second index={this.props.index} key='second'/>
+                                    <Third index={this.props.index} key='third'/>
+                                    <First index={this.props.index} key='first'/>
+                                </> 
+                                )
+                            }
+                        })()}
                     </div>
                 </div>
             </div>

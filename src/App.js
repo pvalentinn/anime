@@ -14,12 +14,12 @@ function App() {
   return (
     <div>
       <Header />
-
       
       <Route path='/anime' component={Anime} />
       <Route path='/manga' component={Manga} />
       <Route path='/studio' component={Studio} />
       <Route path='/' component={Home} exact/>
+      
       <Footer />
     </div>
   );

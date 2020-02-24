@@ -25,11 +25,12 @@ class Studio extends Component {
             }
         }); 
         
-        // console.log(which)
+        console.log(which)
         await this.updateState(i);
+        // copy = [...this.state.box];
 
         let numb = copy.filter( e => e.state === 1);
-        // console.log(numb);
+       
         if (numb.length > 2 ) {
             $('#content'+copy.indexOf(numb[1])).animate({height: '0px'}, 500, 'swing', () => {
                 setTimeout(() => {
@@ -40,8 +41,7 @@ class Studio extends Component {
         }
 
         if(verify) {
-            let iContent = parseInt(which.id[3]) - 1
-            // console.log( $(`#content${iContent}`) )
+            let iContent = parseInt(which.id[3] - 1)
             $(`#content${iContent}`).animate({height: '0px'}, 500, 'swing', () => {
                 setTimeout(() => {
                     copy[copy.indexOf(which)].state = 0;
@@ -49,12 +49,13 @@ class Studio extends Component {
                 }, )
             });
         }
-        $(`${id} + div`).animate({height: '400px'}, 500, 'swing');
+        // $(`${id} + div`).animate({height: '400px'}, 500, 'swing');
+        $(`${id} + div`).slideDown(500).css({display: 'flex'});
     }
 
     updateState = (i) => new Promise( (resolve, reject) => {
         let copy = [...this.state.box];
-        console.log(this.state.box);
+        // console.log(this.state.box);
         copy[i].state = 1;
         resolve(this.setState({box: copy}));
     })

@@ -13,7 +13,7 @@ class First extends Component {
     }
 
     render() {
-        console.log(this.props.index);
+        // console.log(this.props.index);
         return (
             <div className={style.first}>
                 {this.state.page[this.props.index].text};

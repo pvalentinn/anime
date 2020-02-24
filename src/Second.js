@@ -6,8 +6,8 @@ class Second extends Component {
     
     state = {
         page: [
-            {text: 'aaa'},
-            {text: 'tex c'},
+            {text: <img src='https://via.placeholder.com/300'></img>},
+            {text: <img src='https://via.placeholder.com/300'></img>},
             {text: 'texv'},
             {text: 'texf'}
         ]
