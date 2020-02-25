@@ -19,13 +19,13 @@ class Nav extends Component {
     componentWillMount() {
         let copy = this.state;
         copy.link = window.location.href.slice(0, window.location.href.length-1);
-        copy.href.forEach(e => e.link = copy.link+e.link);
+        copy.href[0].link = copy.link + copy.href[0].link;
         return this.setState({link: copy.link, href: copy.href});
     }
 
 
     render() {
-        console.log(this.state.link)
+        console.log(this.state.href);
         return ( 
             <nav>
             <ul>
