@@ -16,3 +16,4 @@ It's hosted on https://ranime-f9146.firebaseapp.com/ using **[Firebase Hosting]*
 
 [React]: https://fr.reactjs.org/
 [Firebase Hosting]: https://firebase.google.com/docs/hosting
+[Auth]: "portfolio"
